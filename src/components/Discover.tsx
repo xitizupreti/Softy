@@ -18,36 +18,42 @@ export default function Discover() {
           <DiscoverCard
             icon={Droplet}
             iconBg="bg-blue-200 rounded-lg"
+            iconColor="text-blue-700"
             heading="Innovative Hygiene Solutions"
             description="Providing a diverse range of premium hygiene products, including wet wipes, tissues, and personal care items."
           />
           <DiscoverCard
             icon={Award}
             iconBg="bg-green-200 rounded-lg"
+            iconColor="text-green-700"
             heading="Uncompromising Quality"
             description="Ensuring the highest standards in product quality to meet the hygiene needs of families and businesses."
           />
           <DiscoverCard
             icon={Truck}
             iconBg="bg-purple-200 rounded-lg"
+            iconColor="text-purple-700"
             heading="Nationwide Distribution"
             description="Efficient and reliable delivery services that ensure timely availability of hygiene products across Nepal."
           />
           <DiscoverCard
             icon={Flag}
             iconBg="bg-orange-200 rounded-lg"
+            iconColor="text-orange-700"
             heading="Proudly Made in Nepal"
             description="Softy Hygiene is a locally established brand, offering innovative and accessible hygiene products to every household."
           />
           <DiscoverCard
             icon={Phone}
             iconBg="bg-red-200 rounded-lg"
+            iconColor="text-red-700"
             heading="Dedicated Customer Support"
             description="Reach us at +01-5191390 or softy.corporate@gmail.com for queries and feedback. Located in Maitighar, Kathmandu."
           />
           <DiscoverCard
             icon={Circle}
             iconBg="bg-yellow-200 rounded-lg"
+            iconColor="text-yellow-700"
             heading="Committed to Growth"
             description="Focused on enhancing customer satisfaction while expanding into new markets and setting industry benchmarks."
           />

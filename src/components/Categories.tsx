@@ -23,7 +23,7 @@ export default function Categories() {
           professional hygiene needs.
         </p>
         <div className="flex items-center justify-center w-full mt-8">
-          <Carousel className="w-full max-w-3xl lg:max-w-6xl">
+          <Carousel className="w-[90%] max-w-3xl lg:max-w-6xl">
             <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
