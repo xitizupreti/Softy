@@ -224,12 +224,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center font-medium hidden md:flex items-center justify-evenly p-4 w-[80%] md:w-[50%] lg:w-[30%] mx-auto text-white text-1xl font-mdeium mt-4">
-            “As action speaks louder than words.”We SOFTY HYGIENE PVT.LTD. is
-            one of the largest private level manufacturing company of disposable
-            wet wipes, Baby wipes ,Baby Diaper, Sanitary Napkins and Tissue
-            paper. We ensure feminine care and baby care for their safety and
-            comfort. So, we specially manufacture our product in women and Baby
-            base."
+            As action speaks louder than words.”We SOFTY HYGIENE PVT.LTD. is one
+            of the largest private level manufacturing company of disposable wet
+            wipes, Baby wipes ,Baby Diaper, Sanitary Napkins and Tissue paper.
+            We ensure feminine care and baby care for their safety and comfort.
+            So we specially manufacture our product in women and Baby base.
           </div>
         </div>
         <Separator className="bg-gray-700 w-full h-[3px] my-0" />
