@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Carousel from "@/components/Carousel";
 import Categories from "@/components/Categories";
 import Discover from "@/components/Discover";
@@ -8,7 +7,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      <div className="pt-10"></div>
       <Carousel />
       <Categories />
       <Discover />

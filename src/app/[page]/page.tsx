@@ -1,5 +1,5 @@
 export default async function Page({ params }: { params: { page: string } }) {
-  const { page } = params;
+  const { page } = await params;
 
   const pageContent: { [key: string]: { title: string; description: string } } =
     {
@@ -28,7 +28,7 @@ export default async function Page({ params }: { params: { page: string } }) {
   const content = pageContent[page];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container pt-25 mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">{content.title}</h1>
       <p>{content.description}</p>
     </div>

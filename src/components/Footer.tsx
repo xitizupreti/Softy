@@ -93,7 +93,7 @@ export default function Footer() {
               >
                 <stop stopColor="#3771c8"></stop>
                 <stop offset=".128" stopColor="#3771c8"></stop>
-                <stop offset="1" stopColor="#60f" stop-opacity="0"></stop>
+                <stop offset="1" stopColor="#60f" stopOpacity="0"></stop>
               </radialGradient>
             </defs>
           </g>
