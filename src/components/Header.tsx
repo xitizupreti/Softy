@@ -201,8 +201,9 @@ export default function Header() {
   ];
 
   return (
-    <nav className="fixed mb-[40px] w-full bg-gradient-to-r from-primary via-primary to-pink-500 backdrop-blur-md z-50">
+    <nav className="fixed mb-[40px]  w-full bg-gradient-to-r from-primary via-primary to-pink-500 backdrop-blur-md z-50">
       <div className="container mx-auto px-4">
+        {/* Simple decorative background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-4 left-10 text-white/10">
             <Flower className="w-[60px] h-[60px]" />
@@ -213,6 +214,7 @@ export default function Header() {
         </div>
 
         <div className="flex items-center justify-between">
+          {/* Logo */}
           <Image
             src="/logo.png"
             alt="Logo"
@@ -221,6 +223,7 @@ export default function Header() {
             className="object-contain"
           />
 
+          {/* Secondary Logo */}
           <div>
             <Image
               src="/iso.png"
@@ -231,11 +234,10 @@ export default function Header() {
             />
           </div>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => {
-              const isActive =
-                pathname === item.href ||
-                (item.href !== "/" && pathname.startsWith(item.href));
+              const isActive = pathname === item.href;
               return (
                 <p key={index} className="btn">
                   <Link
@@ -253,6 +255,7 @@ export default function Header() {
             })}
           </div>
 
+          {/* Mobile Menu Trigger */}
           <div className="block md:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
@@ -266,25 +269,16 @@ export default function Header() {
                 className="bg-purple-800 text-white w-[300px] p-0"
               >
                 <nav className="flex flex-col items-center space-y-4 py-8">
-                  {navItems.map((item) => {
-                    const isActive =
-                      pathname === item.href ||
-                      (item.href !== "/" && pathname.startsWith(item.href));
-                    return (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className={`hover:text-white/80 transition-colors duration-300 text-lg py-2 ${
-                          isActive
-                            ? "text-white underline underline-offset-4"
-                            : ""
-                        }`}
-                        onClick={() => setOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                    );
-                  })}
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="hover:text-white/80 transition-colors duration-300 text-lg py-2"
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                   <div className="flex space-x-4 mt-6">
                     {socialLinks.map((link, index) => (
                       <a
@@ -303,6 +297,7 @@ export default function Header() {
             </Sheet>
           </div>
 
+          {/* Social Media Links (Desktop) */}
           <div className="hidden md:block">
             <div className="flex h-16 items-center justify-center gap-4">
               {socialLinks.map((link, index) => (
